@@ -26,7 +26,11 @@ class AdminController extends Controller
         return view('admin.showUsers',compact('users'));
     }
 
+public function editUsers(Request $request){
+    $request->flash();
+    return view('admin.editUsers');
 
+}
     /**
      * Show the form for creating a new resource.
      *

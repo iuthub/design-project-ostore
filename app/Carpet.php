@@ -14,4 +14,14 @@ class Carpet extends Model
 
         return $this->morphMany('App\Photo','imageable');
     }
+
+    public function orders(){
+
+        return $this->morphMany('App\Order','orderable');
+    }
+
+    public function basket(){
+
+        return $this->morphMany('App\Basket','basketable');
+    }
 }

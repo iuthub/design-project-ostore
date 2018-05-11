@@ -30,7 +30,7 @@ Route::get('/log',function(){
 Route::get('/reg', function () {
     return view('auth.register');
 });
-
+Route::resource('test','TestController');
 Route::get('/admin','AdminController@index')->middleware('auth');
 Auth::routes();
 
@@ -45,6 +45,11 @@ Route::get('makeorder','UserController@makeorder')->middleware('auth');
 Route::resource('prayermat','PrayerMatController');
 Route::resource('flannel','FlannelController');
 Route::resource('carpet','CarpetController');
+Route::post('order','OrderController@order')->middleware('auth');
+Route::post('basket/add','BasketController@add')->middleware('auth');
+Route::get('basket/index','BasketController@index')->middleware('auth');
+Route::post('basket/delete','BasketController@delete')->middleware('auth');
+Route::get('basket/order','OrderController@orderFromBasket')->middleware('auth');
 
 
 

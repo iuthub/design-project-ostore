@@ -17,8 +17,9 @@ class CarpetController extends Controller
     public function index()
     {
         //
-        $carpets=Carpet::all();
-        return view('carpet.index',compact('carpets'));
+        $carpets=Carpet::orderBy('title','desc')->paginate(1);
+        $obj=new Carpet();
+        return view('carpet.index',compact('carpets','obj'));
     }
 
     /**

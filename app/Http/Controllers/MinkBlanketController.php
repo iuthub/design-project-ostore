@@ -15,10 +15,11 @@ class MinkBlanketController extends Controller
     public function index()
     {
 
-        $blankets=Minkblanket::all();
 
+        $blankets=Minkblanket::orderBy('title','desc')->paginate(1);
+$obj=new Minkblanket;
 
-        return view('minkblanket.index',compact('blankets'));
+        return view('minkblanket.index',compact('blankets','obj'));
         //
     }
 

@@ -16,8 +16,9 @@ class FlannelController extends Controller
     public function index()
     {
         //
-        $flannels=Flannel::all();
-        return view('flannel.index',compact('flannels'));
+        $flannels=Flannel::orderBy('title','desc')->paginate(1);
+        $obj=new Flannel();
+        return view('flannel.index',compact('flannels','obj'));
     }
 
     /**

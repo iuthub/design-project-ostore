@@ -2,24 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Minkblanket;
-use App\Prayermat;
 use Illuminate\Http\Request;
 
-class PrayerMatController extends Controller
+class TestController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         //
-        $mats=Prayermat::orderBy('title','desc')->paginate(1);
-        $obj=new Prayermat();
-
-        return view('prayermat.index',compact('mats','obj'));
+        return $request->all();
     }
 
     /**
@@ -30,8 +25,6 @@ class PrayerMatController extends Controller
     public function create()
     {
         //
-
-        return view('prayermat.create');
     }
 
     /**
@@ -43,22 +36,6 @@ class PrayerMatController extends Controller
     public function store(Request $request)
     {
         //
-
-        $input=$request->all();
-        $title=$input['title'];
-        $prayermat=Prayermat::create(['title'=>$title]);
-
-        $file=$request->file('path');
-        $name=$file->getClientOriginalName();
-        $file->storeAs('public/prayermat',$name);
-        $input['path']=$name;
-        $prayermat->photos()->create(['path'=>$name]);
-
-
-
-
-        return redirect('prayermat');
-
     }
 
     /**

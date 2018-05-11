@@ -58,7 +58,7 @@
        </div> -->
 
     <div class="container">
-        <a class="navbar-brand" href="{{url('index')}}"><img src="images/kingday2.png"></a>
+        <a class="navbar-brand" href="{{url('index')}}"><img src="{{url('/images/kingday2.png')}}"></a>
         <button class="navbar-toggler align-self-end" type="button" data-toggle="collapse" data-target="#headNavbar" aria-controls="headNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -106,7 +106,7 @@
                 </div>
                 <!--           <input class="form-control" type="text" placeholder="Search" aria-label="Search"> -->
             </form>
-            <a href="" class="text-warning"><i class="fas fa-shopping-bag fa-lg align-self-end"></i></a>
+            <a href="{{url('basket/index')}}" class="text-warning"><i class="fas fa-shopping-bag fa-lg align-self-end"></i></a>
         </div>
     </div>
 </nav>
@@ -137,7 +137,7 @@
                 <div class="row">
                     <div class="p-4 col-md-6 mt-3">
                         <!-- <h2 class="mb-4 text-secondary">Kingday</h2> -->
-                        <a href="{{url('index')}}"><img class="d-block img-fluid mx-auto" src="images/kingday2.png" ></a>
+                        <a href="{{url('index')}}"><img class="d-block img-fluid mx-auto" src="{{url('images/kingday2.png')}}" ></a>
                         <!-- <p class="text-white">A company for whatever you may need, from website prototyping to publishing</p> -->
                     </div>
                     <div class="p-4 col-md-6 text-md-left text-center">

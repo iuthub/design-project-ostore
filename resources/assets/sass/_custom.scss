@@ -33,6 +33,10 @@ a.sss-lgray-hover:hover, a.sss-lgray-hover:focus, button.sss-lgray-hover:hover, 
   background-color: #2f2f2f !important;
 }
 
+a.sss-gray:hover, a.sss-gray:focus {
+  background-color: #c6c6c6 !important;
+}
+
 .sss-text-gray {
   color: #8e8d8d !important;
 }
@@ -109,9 +113,9 @@ body .top-navbar {
   z-index: 9999;
 }
 
-body .navbar .container-fluid{
-  margin-bottom: -70pt !important;
-}
+/*	body .navbar .container-fluid{
+		margin-bottom: -70pt !important;
+	}*/
 
 /*	body .top-navbar ul{
 		border-bottom: 2px solid #4e4e4e;
@@ -221,7 +225,7 @@ footer, .footer-nav{
 
 
 
-// Small devices (landscape phones, 576px and up)
+/*// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 
 
@@ -229,19 +233,54 @@ footer, .footer-nav{
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+	body {
+	    font-family: Gilroy, sans-serif;
+		font-size: 8pt;
+	}
 
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  body .top-navbar ul{
-    border-bottom: 2px solid #4e4e4e;
-  }
+		body .top-navbar ul{
+		border-bottom: 2px solid #4e4e4e;
+	}
 
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
+}*/
+
+/*@media (min-width: 576px) {
+
 }
 
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+	body {
+		font-size: 8pt;
+	}
+}
+
+@media (min-width: 1200px) {
+
+}*/
+
+@media only screen and (min-width :480px)
+{
+  body {
+    font-size: 8pt;
+  }
+}
+
+@media only screen and (min-width :768px)
+{
+  body {
+    font-size: 8pt;
+  }
+}

@@ -10,31 +10,8 @@
     <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-
 </head>
 <body>
-
-
-
-
-       {{--     <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-plus"></i>New Order</a>
-            </li>
-            <li class="d-none d-lg-block">
-                <span class="divider-vertical"></span>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-cloud-upload-alt"></i>Uploads</a>
-            </li>
-            <li class="d-none d-lg-block">
-                <span class="divider-vertical"></span>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-user"></i>My Account</a>
-            </li>--}}
-
-
 
 <nav class="bottom-navbar navbar navbar-inverse navbar-expand-lg navbar-dark sss-black text-uppercase ">
     <!--    <div class="container-fluid">
@@ -57,60 +34,74 @@
            </ul>
        </div> -->
 
-    <div class="container">
-        <a class="navbar-brand" href="{{url('index')}}"><img src="{{url('/images/kingday2.png')}}"></a>
-        <button class="navbar-toggler align-self-end" type="button" data-toggle="collapse" data-target="#headNavbar" aria-controls="headNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse align-self-end" id="headNavbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{url('minkblanket')}}">Mink Blankets<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="d-none d-lg-block">
-                    <span class="divider-vertical"></span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{url('prayermat')}}">Prayer Mats</a>
-                </li>
-                <li class="d-none d-lg-block">
-                    <span class="divider-vertical"></span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{url('flannel')}}">Flannel</a>
-                </li>
-                <li class="d-none d-lg-block">
-                    <span class="divider-vertical"></span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{url('carpet')}}">Carpets</a>
-                </li>
-                <!--           <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
-                          </li> -->
-                <!--           <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown07">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                          </li> -->
-            </ul>
 
-            <form class="form-inline my-2 my-md-0 align-self-center">
-                <!-- <i class="fas fa-search"></i> -->
-                <div class="inner-addon left-addon">
-                    <i class="glyphicon glyphicon-search"></i>
-                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                </div>
-                <!--           <input class="form-control" type="text" placeholder="Search" aria-label="Search"> -->
-            </form>
-            <a href="{{url('basket/index')}}" class="text-warning"><i class="fas fa-shopping-bag fa-lg align-self-end"></i></a>
-            <a href="{{url('login')}}" class="text-warning"><i class="fas fa-key fa-lg align-self-end"></i></a>
+    <a class="navbar-brand" href="#"><img src="{{url('/images/kingday2.png')}}"></a>
+    <button class="navbar-toggler align-self-end" type="button" data-toggle="collapse" data-target="#headNavbar" aria-controls="headNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse align-self-end" id="headNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url('minkblanket')}}">Mink Blankets<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="d-none d-lg-block">
+                <span class="divider-vertical"></span>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url('prayermat')}}">Prayer Mats</a>
+            </li>
+            <li class="d-none d-lg-block">
+                <span class="divider-vertical"></span>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url('flannel')}}">Flannel</a>
+            </li>
+            <li class="d-none d-lg-block">
+                <span class="divider-vertical"></span>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url('carpet')}}">Carpets</a>
+            </li>
+            <!--           <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                      </li> -->
+            <!--           <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown07">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li> -->
+        </ul>
 
-        </div>
+        <form class="form-inline my-2 my-md-0 align-self-center">
+            <!-- <i class="fas fa-search"></i> -->
+            <div class="inner-addon left-addon">
+                <i class="glyphicon glyphicon-search"></i>
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+            <!--           <input class="form-control" type="text" placeholder="Search" aria-label="Search"> -->
+        </form>
+        <a href="" class="text-warning"><i class="fas fa-shopping-bag fa-lg align-self-end"></i></a>
+        <a href="" class="sss-text-white"><i class="fas fa-user fa-lg align-self-end"></i></a>
+        <!--         <div>
+                  <div>
+                    <a href="" class="text-warning"><i class="fas fa-shopping-bag fa-lg align-self-end"></i></a>
+                  </div>
+                  <div class="dropdown">
+                    <a class="sss-text-white" id="accountMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-lg align-self-end"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right sss-lgray align-self-center rounded-0 mt-2" aria-labelledby="accountMenu">
+                      <a class="dropdown-item sss-lgray" href="#">Edit</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item sss-lgray" href="#">New Order</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item sss-lgray" href="#">Bla Bla</a>
+                    </div>
+                  </div>
+                </div> -->
     </div>
+
 </nav>
 
 
@@ -121,15 +112,13 @@
         <ol class="breadcrumb my-0 sss-gray rounded-0">
             <li><a href=""><i class="fas fa-chevron-circle-left mr-2 text-warning"></i></a></li>
             <li class="breadcrumb-item"><a href="#" class="text-warning">Home</a></li>
-            <li class="breadcrumb-item"><a href="#" class="text-warning">Library</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Data</li>
+            <li class="breadcrumb-item active" aria-current="page">User</li>
         </ol>
     </div>
 </section>
 
+
 @yield('content')
-
-
 
 
 <div id="foot-block">
@@ -139,7 +128,7 @@
                 <div class="row">
                     <div class="p-4 col-md-6 mt-3">
                         <!-- <h2 class="mb-4 text-secondary">Kingday</h2> -->
-                        <a href="{{url('index')}}"><img class="d-block img-fluid mx-auto" src="{{url('images/kingday2.png')}}" ></a>
+                        <a href=""><img class="d-block img-fluid mx-auto" src="{{url('/images/kingday2.png')}}" ></a>
                         <!-- <p class="text-white">A company for whatever you may need, from website prototyping to publishing</p> -->
                     </div>
                     <div class="p-4 col-md-6 text-md-left text-center">
@@ -217,7 +206,6 @@
 <!-- <script src="js/popper.min.js"></script> -->
 <script src="js/jquery-3.3.1.slim.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/css.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -225,5 +213,3 @@
 
 </body>
 </html>
-
-

@@ -26,7 +26,7 @@
     <div aria-label="breadcrumb">
         <ol class="breadcrumb my-0 sss-gray rounded-0">
             <li><a href=""><i class="fas fa-chevron-circle-left mr-2 text-warning"></i></a></li>
-            <li class="breadcrumb-item"><a href="#" class="text-warning">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{url('index')}}" class="text-warning">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Admin</li>
         </ol>
     </div>

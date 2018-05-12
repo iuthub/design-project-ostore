@@ -31,7 +31,7 @@ class CarpetController extends Controller
     {
         //
 
-        return view('carpet.create');
+        return view('admin.carpet');
     }
 
     /**
@@ -56,7 +56,7 @@ $carpet->photos()->create(['path'=>$name]);
 
 
 
-return redirect('carpet');
+return redirect('admin.index');
 
     }
 

@@ -32,7 +32,7 @@ $obj=new Minkblanket;
     {
         //
 
-        return view('minkblanket.create');
+        return view('admin.mink');
     }
 
     /**
@@ -58,7 +58,7 @@ $obj=new Minkblanket;
 
 
 
-        return redirect('minkblanket');
+        return redirect('admin/minkblanket');
     }
 
     /**

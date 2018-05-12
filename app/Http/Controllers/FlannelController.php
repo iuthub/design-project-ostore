@@ -29,7 +29,7 @@ class FlannelController extends Controller
     public function create()
     {
         //
-        return view('flannel.create');
+        return view('admin.flannel');
     }
 
     /**
@@ -54,7 +54,7 @@ class FlannelController extends Controller
 
 
 
-        return redirect('flannel');
+        return redirect('admin/minkblanket');
 
     }
 

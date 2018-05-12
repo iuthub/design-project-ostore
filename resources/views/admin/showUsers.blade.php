@@ -13,10 +13,13 @@
                     <h3 class="text-uppercase">Admin Dashboard</h3>
                     <div class="list-group">
                         <a href="index.php"><button type="button" class="btn btn-warning rounded-0 text-uppercase px-4">Show Users<i class="fas fa-chevron-circle-right ml-2"></i></button></a>
-                        <a href="index.php"><button type="button" class="btn sss-black sss-text-white rounded-0 text-uppercase px-4">Edit Users<i class="fas fa-chevron-circle-right ml-2"></i></button></a>
-                        <a href="index.php"><button type="button" class="btn sss-black sss-text-white rounded-0 text-uppercase px-4">Upload Product<i class="fas fa-chevron-circle-right ml-2"></i></button></a>
+                        <a href="{{url('admin/edit')}}"><button type="button" class="btn sss-black sss-text-white rounded-0 text-uppercase px-4">Edit Users<i class="fas fa-chevron-circle-right ml-2"></i></button></a>
+                        <a href="{{url('admin/minkblanket')}}"><button type="button" class="btn sss-black sss-text-white rounded-0 text-uppercase px-4">Upload Minkblankets<i class="fas fa-chevron-circle-right ml-2"></i></button></a>
+                        <a href="{{url('admin/prayermat')}}"><button type="button" class="btn sss-black sss-text-white rounded-0 text-uppercase px-4">Upload Prayermats<i class="fas fa-chevron-circle-right ml-2"></i></button></a>
+                        <a href="{{url('admin/flannel')}}"><button type="button" class="btn sss-black sss-text-white rounded-0 text-uppercase px-4">Upload Flannels<i class="fas fa-chevron-circle-right ml-2"></i></button></a>
+                        <a href="{{url('admin/carpet')}}"><button type="button" class="btn sss-black sss-text-white rounded-0 text-uppercase px-4">Upload Carpets<i class="fas fa-chevron-circle-right ml-2"></i></button></a>
                         <!--                 <a href="index.php"><button type"button" class="btn btn-warning rounded-0 text-uppercase px-4">Edit Account<i class="fas fa-chevron-circle-right ml-2"></i></button></a> -->
-                        <a href="#" class="list-group-item list-group-item-action sss-lgray sss-text-black font-weight-bold px-0 border-0 rounded-0">Log Out</a>
+                        <a href="{{url('logout')}}" class="list-group-item list-group-item-action sss-lgray sss-text-black font-weight-bold px-0 border-0 rounded-0">Log Out</a>
                     </div>
                 </div>
             </div>

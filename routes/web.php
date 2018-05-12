@@ -50,6 +50,12 @@ Route::post('basket/add','BasketController@add')->middleware('auth');
 Route::get('basket/index','BasketController@index')->middleware('auth');
 Route::post('basket/delete','BasketController@delete')->middleware('auth');
 Route::get('basket/order','OrderController@orderFromBasket')->middleware('auth');
+Route::get('admin/minkblanket','MinkBlanketController@create')->middleware('auth');
+Route::get('admin/prayermat','PrayerMatController@create')->middleware('auth');
+Route::get('admin/flannel','FlannelController@create')->middleware('auth');
+Route::get('admin/carpet','CarpetController@create')->middleware('auth');
+Route::get('user/edit','userController@edit')->middleware('auth');
+
 
 
 

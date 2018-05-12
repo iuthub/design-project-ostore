@@ -31,7 +31,7 @@ class PrayerMatController extends Controller
     {
         //
 
-        return view('prayermat.create');
+        return view('admin.mat');
     }
 
     /**
@@ -57,7 +57,7 @@ class PrayerMatController extends Controller
 
 
 
-        return redirect('prayermat');
+        return redirect('admin/minkblanket');
 
     }
 

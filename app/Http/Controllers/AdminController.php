@@ -16,7 +16,7 @@ class AdminController extends Controller
     public function index()
     {
         //
-        return view('admin.index');
+        return view('admin.mink');
     }
 
     public function showUsers(){
@@ -25,10 +25,10 @@ class AdminController extends Controller
 
         return view('admin.showUsers',compact('users'));
     }
+public function createProduct()
+{
 
-public function editUsers(Request $request){
-    $request->flash();
-    return view('admin.editUsers');
+    return view('admin/minkblanket');
 
 }
     /**

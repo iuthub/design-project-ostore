@@ -90,7 +90,9 @@
                                 <h5>View: 24 | 48 | 120</h5>
                             </div>
                             <div class="col justify-content-right text-right">
-                                {{$blankets->links()}}
+                                <h5 class="d-inline">Page 1 of 4</h5>
+                                <a href="" class="mx-2"><i class="far fa-caret-square-left"></i></a>
+                                <a href="" class="mx-2"><i class="far fa-caret-square-right"></i></a>
                             </div>
                         </div>
 
@@ -116,25 +118,10 @@
                                     @if($i%4==0)
                                 </div>
                             @endif
+                            <button class="btn btn-info">Order</button>
                             <?php $i++  ?>
-                                    {!! Form::open(['method'=>'POST', 'action'=>'OrderController@order' ]) !!}
-                                {!! Form::hidden('class',get_class($obj)) !!}
-                                {!! Form::hidden('id',$blanket->id) !!}
-                                <div class="form-group">
-                                    {!! Form::submit('Order',['class'=>'btn btn-primary']) !!}
-
-                                </div>
-                                {!! Form::close() !!}
-
-                                {!! Form::open(['method'=>'POST', 'action'=>'BasketController@add' ]) !!}
-                                {!! Form::hidden('class',get_class($obj)) !!}
-                                {!! Form::hidden('id',$blanket->id) !!}
-                                <div class="form-group">
-                                    {!! Form::submit('Add to busket',['class'=>'btn btn-success']) !!}
-                                </div>
-                                {!! Form::close() !!}
                             @endforeach
-
+                            </form>
 
 
 
@@ -146,7 +133,9 @@
                                 <h5>View: 24 | 48 | 120</h5>
                             </div>
                             <div class="col justify-content-right text-right">
-                                {{$blankets->links()}}
+                                <h5 class="d-inline">Page 1 of 4</h5>
+                                <a href="" class="mx-2"><i class="far fa-caret-square-left"></i></a>
+                                <a href="" class="mx-2"><i class="far fa-caret-square-right"></i></a>
                             </div>
                         </div>
                     </div>

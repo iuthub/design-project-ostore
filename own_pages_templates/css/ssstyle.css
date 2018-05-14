@@ -1,0 +1,247 @@
+	@font-face {
+	    font-family: Gilroy;
+	    src: url(fonts/Gilroy-Light.otf)format("opentype");
+	}
+
+	@font-face {
+	    font-family: Gilroy;
+	    src: url(fonts/Gilroy-ExtraBold.otf)format("opentype");
+	    font-weight: bold;
+	}
+	
+	.sss-black {
+		background-color: #1d1b1b !important;
+	}
+
+	a.sss-black:hover, a.sss-black:focus, button.sss-black:hover, button.sss-black:focus{
+	  	background-color: #2f2f2f !important;
+	}
+
+	.sss-lgray {
+		background-color: #f5f5f5 !important;
+	}
+	
+	.sss-lgray-hover {
+		background-color: #f5f5f5 !important;
+	}
+
+	a.sss-lgray-hover:hover, a.sss-lgray-hover:focus, button.sss-lgray-hover:hover, button.sss-lgray-hover:focus {
+	  	background-color: #d4d4d4 !important;
+	}
+
+	.sss-gray {
+		background-color: #2f2f2f !important;
+	}
+
+	.sss-text-gray {
+		color: #8e8d8d !important;
+	}
+
+	a.sss-text-gray:hover, a.sss-text-gray:focus {
+	  color: #c6c6c6 !important;
+	}
+
+	.sss-text-lgray {
+		color: #797979 !important;
+	}
+
+	a.sss-text-lgray:hover, a.sss-text-lgray:focus {
+	  color: #8e8d8d !important;
+	}
+
+	.sss-text-white {
+	  color: #fff !important;
+	}
+
+	a.sss-text-white:hover, a.sss-text-white:focus {
+	  color: #797979 !important;
+	}
+
+	.sss-text-black {
+		color: #1d1b1b !important;
+	}
+
+	a.sss-text-black:hover, a.sss-text-black:focus, button.sss-text-black:hover, button.sss-text-black:focus{
+	  	color: #2f2f2f !important;
+	}
+
+	.fa-shopping-bag:hover {
+		
+	}
+
+
+	body {
+	    font-family: Gilroy, sans-serif;
+		font-size: 14pt;
+	}
+
+/*	body > nav .middle-nav .navbar .navbar-inverse .navbar-expand-lg .navbar-dark .bg-dark {
+		padding-top: 100pt !important; 
+	}*/
+	body > nav {
+		font-weight: bold; 
+		/*padding-top: 100pt !important;*/ 
+	}
+
+	.navbar .divider-vertical {
+	    display: inline-block;
+	    vertical-align: middle;
+		height: 40px;
+		margin: 0 9px;
+		border-left: 1px solid #4e4e4e;
+		border-right: 1px solid #454545;
+/*		border-left: 1px solid #f2f2f2;
+		border-right: 1px solid #ffffff;*/
+	}
+
+/*	nav i, .navbar i {
+		margin-left: 10pt;
+		margin-right: 10pt;
+	}*/
+
+	.top-navbar li i, .bottom-navbar i {
+		margin-left: 10pt;
+		margin-right: 10pt;
+	/*	margin-bottom: 1pt;*/
+	}
+
+	body .top-navbar {
+		z-index: 9999;
+	}
+
+	body .navbar .container-fluid{
+		margin-bottom: -70pt !important;
+	}
+
+/*	body .top-navbar ul{
+		border-bottom: 2px solid #4e4e4e;
+	}*/
+
+	#headNavbar > form > div > input {
+
+	}
+
+	body > nav > ul > li:nth-child(2) {
+	
+	}
+
+	section .sec404 {
+		height: 1000px;
+	}
+
+	section .secLogin {
+		height: 1000px;
+	}
+
+	section .secShipment{
+		height: 700px;
+	}
+
+	section .secOrders{
+		min-height: 700px;
+	}
+
+	section .secMinkblankets{
+		
+	}
+
+	#middlePage > div > div > div > div.col-8 div.col-8 > div.d-flex.flex-row.itemcontrol > div.pr-2 {
+		font-size: 10pt;
+		border:none;
+	}
+	
+	#itemcontrol .divider-vertical {
+		display: inline-block;
+	    vertical-align: middle;
+		height: 8px;
+		margin: 0 4px;
+		border-left: 2px solid #000000;
+		border-right: 2px solid #000000;
+	}
+
+	section h1 {
+		font-size: 80pt;
+		font-weight: bold;
+	}
+
+	footer, .footer-nav{
+/*	    position: fixed;*/
+	    font-size: 11pt;
+	    font-weight: normal;
+/*	    bottom: 0;*/
+	    width: 100%;
+	}
+
+	.sss-hul{
+		
+	}
+
+	.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+		color: #fff;
+		background-color: #000;		
+	}
+
+	.nav-pills .nav-link {
+		color: #8e8d8d;
+/*		background-color: #fff;*/
+	}
+
+	#colourDropdown .row .col .colorBox{
+		height: 25pt;
+		width: 25pt;
+	}
+
+	.end-footer {
+		font-size: 11pt;
+		background-color: black;
+		text-align: center;
+	}
+
+	#foot-block {
+		position: relative;
+		bottom: 0;
+		width: 100%;
+	}
+
+/*// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { 
+
+
+
+}*/
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+		body .top-navbar ul{
+		border-bottom: 2px solid #4e4e4e;
+	}	
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}
+

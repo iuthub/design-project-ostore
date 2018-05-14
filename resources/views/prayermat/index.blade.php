@@ -94,11 +94,9 @@
                             </div>
                         </div>
 
-                        <?php $i=0  ?>
+                       <div class="row">
                         @foreach($mats as $mat)
-                            @if($i%4==0)
-                                <div class="row my-4">
-                                    @endif
+
                                     <div class="col">
                                         <div class="card">
 
@@ -113,10 +111,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    @if($i%4==0)
-                                </div>
-                            @endif
-                            <?php $i++  ?>
+                        </div>
+
                                 {!! Form::open(['method'=>'POST', 'action'=>'OrderController@order' ]) !!}
                                 {!! Form::hidden('class',get_class($obj)) !!}
                                 {!! Form::hidden('id',$mat->id) !!}
@@ -169,4 +165,3 @@
 
 
 @endsection
-

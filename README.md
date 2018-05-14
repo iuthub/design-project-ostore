@@ -6,3 +6,4 @@
 # Ulugbek Khamdamov              U1610245
 # Zafar Ubaydullaev              U1610254
 # Sardorbek Khalimov             U1610259
+## Link to the project report: https://github.com/iuthub/design-project-ostore/blob/master/ReportUpdated.pptx
